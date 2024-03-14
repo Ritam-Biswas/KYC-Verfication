@@ -1,0 +1,184 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #210C6E;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.logo {
+    color: white;
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #210C6E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100px;
+}
+
+.card {
+    background-color: #562abd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(100% - 40px);
+    max-width: 640px;
+    min-width: 480px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.mic-icon {
+    height: 38px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+form {
+    width: 550px;
+    text-align: center;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 1 rem;
+    color: white;
+}
+
+label::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    outline-style: none;
+
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-container {
+    display: flex;
+    align-items: center;
+}
+
+.error-message {
+    align-self: flex-start;
+    display: inline;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: rgb(110, 213, 166);
+    color: #210C6E;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    line-height: 23.4px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #562abd;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+#captureCard {
+    background-color: #562abd;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(100% - 40px);
+    max-width: 640px;
+    min-width: 480px;
+    margin-bottom: 50px;
+}
+
+#uploadcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#fileInput {
+    margin-left: 450px;
+}
+
+#video,
+#canvas {
+    margin-bottom: 10px;
+    max-width: 640px;
+    max-height: 340px;
+    margin: auto;
+}

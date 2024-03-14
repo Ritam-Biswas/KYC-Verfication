@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html"
+        ><img src="../images/logo.png" alt="Logo" class="logo"
+      /></a>
+    </nav>
+
+    <h2 class="heading">Enter your details</h2>
+
+    <div class="card">
+      <form id="user-form">
+        <div class="input-container">
+          <div class="label-container">
+            <label>Full Name</label>
+            <div id="name-error" class="error-message"></div>
+          </div>
+          <div class="input-with-icon">
+            <input type="text" id="name" placeholder="Your Name" />
+            <img
+              src="../images/mic.png"
+              alt="Microphone"
+              id="mic"
+              onclick="startDictation('name')"
+              class="mic-icon"
+            />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <div class="label-container">
+            <label>Date of Birth</label>
+            <div id="dob-error" class="error-message"></div>
+          </div>
+          <div class="input-with-icon">
+            <input type="date" id="dob" placeholder="Date of Birth" />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <div class="label-container">
+            <label>Address</label>
+            <div id="address-error" class="error-message"></div>
+          </div>
+          <div class="input-with-icon">
+            <input type="text" id="address" placeholder="Address" />
+            <img
+              src="../images/mic.png"
+              alt="Microphone"
+              id="mic"
+              onclick="startDictation('address')"
+              class="mic-icon"
+            />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <div class="label-container">
+            <label>City</label>
+            <div id="city-error" class="error-message"></div>
+          </div>
+          <div class="input-with-icon">
+            <input type="text" id="city" placeholder="City" />
+            <img
+              src="../images/mic.png"
+              alt="Microphone"
+              id="mic"
+              onclick="startDictation('city')"
+              class="mic-icon"
+            />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <div class="label-container">
+            <label>State</label>
+            <div id="state-error" class="error-message"></div>
+          </div>
+          <select id="state">
+            <option value="" disabled selected>Select State</option>
+            <option value="state1">State 1</option>
+            <option value="state2">State 2</option>
+            <option value="state3">State 3</option>
+          </select>
+        </div>
+
+        <div class="input-container">
+          <div class="label-container">
+            <label>Zip Code</label>
+            <div id="zipcode-error" class="error-message"></div>
+          </div>
+          <div class="input-with-icon">
+            <input
+              type="text"
+              id="zipcode"
+              placeholder="Zip Code (max 6 digits)"
+            />
+            <img
+              src="../images/mic.png"
+              alt="Microphone"
+              id="mic"
+              onclick="startDictation('zipcode')"
+              class="mic-icon"
+            />
+          </div>
+        </div>
+
+        <div class="input-container">
+          <div class="label-container">
+            <label>Choose your ID Proof</label>
+            <div id="idProof-error" class="error-message"></div>
+          </div>
+          <select id="idProof">
+            <option value="" disabled selected>ID Proof</option>
+            <option value="aadhar">Aadhar Card</option>
+            <option value="pan">Pan Card</option>
+          </select>
+        </div>
+
+        <div class="input-container">
+          <div class="label-container">
+            <label>Enter your ID</label>
+            <div id="id-error" class="error-message"></div>
+          </div>
+          <div class="input-with-icon">
+            <input type="text" id="id" placeholder="ID" />
+            <img
+              src="../images/mic.png"
+              alt="Microphone"
+              id="mic"
+              onclick="startDictation('id')"
+              class="mic-icon"
+            />
+          </div>
+        </div>
+
+        <button type="button" id="next-btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="card" id="captureCard">
+      <h2 class="heading">Capture Your Picture</h2>
+      <video id="video" width="640" height="340" autoplay></video>
+      <button id="snap">Capture</button>
+      <canvas
+        type="file"
+        id="canvas"
+        width="640"
+        height="340"
+        style="display: none"
+      ></canvas>
+      <button id="retake" style="display: none">Retake</button>
+    </div>
+
+    <div class="card" id="uploadcard">
+      <h2 class="heading">Upload ID Card Photos</h2>
+      <input type="file" id="fileInput" accept="image/*" />
+      <button id="submit" onclick="extractAndCompare()">Submit</button>
+    </div>
+
+    <div style="padding: 20px; background: #210c6e; color: #210c6e"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Designed by <a href="" style="color: #210c6e">Tech Titans</a></p>
+        <p>Copyright ©2024 Tech Titans</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
