@@ -1,5 +1,5 @@
 # KYC_Verification
-ezKYC, short for Electronic Know Your Customer, is a digital process that enables companies to verify customer identities electronically, eliminating the need for physical documents. It involves authenticating customer credentials digitally, ensuring compliance with regulations and preventing financial crimes like money laundering and terrorism financing. eKYC relies on technologies like Aadhaar-based verification, biometrics, and OTP authentication to securely verify customer information without the need for in-person verification.This streamlined process not only enhances efficiency but also reduces operational costs significantly, making it a vital tool for businesses in various industries, especially in the financial sector.
+EZKYC (eKYC or Electronic Know Your Customer), is a digital process that enables companies to verify customer identities electronically, eliminating the need for physical documents. It involves authenticating customer credentials digitally, ensuring compliance with regulations and preventing financial crimes like money laundering and terrorism financing. eKYC relies on technologies like Aadhaar-based verification, biometrics, and OTP authentication to securely verify customer information without the need for in-person verification.This streamlined process not only enhances efficiency but also reduces operational costs significantly, making it a vital tool for businesses in various industries, especially in the financial sector.
 
 
 https://github.com/Ritam-Biswas/KYC-Verfication/assets/96855667/3d1c41d1-ab09-4384-a9e7-cd4d0e39aa70
@@ -14,7 +14,6 @@ https://github.com/Ritam-Biswas/KYC-Verfication/assets/96855667/3d1c41d1-ab09-43
    * Installation
 * How to Use
 * Contributing
-* License
 
 ## Features
 * User-Friendly Interface: Intuitive design for easy navigation.
