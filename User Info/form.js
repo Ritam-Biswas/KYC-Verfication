@@ -52,12 +52,24 @@ document.getElementById('next-btn').addEventListener('click', function () {
 
     // Additional validation for ID proof
     if (idProof === 'aadhar' && !/^\d{12}$/.test(id)) {
-        document.getElementById('id-error').textContent = 'Please enter a Aadhar Card number';
+        document.getElementById('id-error').textContent = 'Please enter a Aadhaar Card number';
         isValid = false;
     }
-    if (idProof === 'pan' && id.length !== 10) {
+    if (idProof === 'pan' && (!/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/.test(id))) {
         document.getElementById('id-error').textContent = 'Please enter a valid Pan Card number';
         isValid = false;
+    }
+    if (idProof === 'drive' && (!/^[A-Z]{2}[0-9]{2}\s[0-9]{4}[0-9]{7}$/.test(id))) {
+        document.getElementById('id-error').textContent = 'Please enter a valid Driving License number';
+        isValid = false;
+    }
+    if (idProof === 'pass'(!/^[A-Z][1-9][0-9]{2}\s?[0-9]{4}[1-9]$/.test(id))) {
+        document.getElementById('id-error').textContent = 'Please enter a valid Passport number';
+        isValid - false;
+    }
+    if (idProof === 'voter' && id.length !== 10) {
+        document.getElementById('id-error').textContent = 'Please enter a valid Voter ID';
+        isValid - false;
     }
 
     // Check if all form inputs are filled and photo is captured
