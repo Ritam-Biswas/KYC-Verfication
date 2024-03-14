@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import 'regenerator-runtime';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
