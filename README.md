@@ -5,7 +5,7 @@ EZKYC (eKYC or Electronic Know Your Customer), is a digital process that enables
 https://github.com/Ritam-Biswas/KYC-Verfication/assets/96855667/3d1c41d1-ab09-4384-a9e7-cd4d0e39aa70
 
 ## Demo Video Link
-[https://drive.google.com/file/d/1TJSIb-RYXVWOQJVU_mMPE4XL6XogoWUf/view?usp=sharing](Demo Video Link)
+(https://drive.google.com/file/d/1TJSIb-RYXVWOQJVU_mMPE4XL6XogoWUf/view?usp=sharing)[Demo Video]
 
 ## Table of Contents
 * Features
